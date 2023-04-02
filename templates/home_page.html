@@ -1,0 +1,351 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Namit Jain</title>
+    <link rel="icon" href="{% static 'images/logo-icon.png' %}">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="preload" href="{% static 'images/fonts/Agustina.woff' %}" as="font" type="font/woff" crossorigin="">
+    <script src="https://use.fontawesome.com/66c3c19309.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.3/dist/ionicons.js"></script>
+    <!-- links -->
+</head>
+
+
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <!-- <li><i class="uil uil-moon change-theme" id="theme-button"></i></li> -->
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+    <header id="header" class="fixed-top ">
+        <div class="container-fluid  navbur">
+
+            <div class="navi">
+                <div class="col-xl-9 d-flex align-items-center lefty">
+                    <h1 class="logo mr-auto"><a href="#">Namit Jain</a></h1>
+
+                    <nav class="nav-menu d-none d-lg-block float-right">
+                        <ul>
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#work">My Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <div class="invert pl-4 " id="theme-button">
+                                <ion-icon name='contrast-outline' style="color:rgb(17, 190, 221)"></ion-icon>
+                            </div>
+                          
+                        </ul>
+
+                    </nav>
+
+                    <div class="changed mx-3"><i class="icofont-ui-brightness change-theme" id="theme-button"></i></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class=" descript "  id="home">
+        <div class="container ">
+
+            <div class="small-container ">
+                <div class="row">
+                    <div class="col-md-6 initial-0 aos-init " data-aos="zoom-in" data-aos-delay="200">
+                        <p id="hey">HEY THERE !</p>
+                        {% comment %} {% for infor in info %} {% endcomment %}
+                        <h1 id="name">I'M <span>Namit Jain</span> </h1>
+                        <h3> A Software Engineer</h3>
+                        <p> <span id="big"></span>I am passinate about making everyting from scratch and learning new things with it.</p>
+
+                        <div class="social">
+                            {% comment %} <a href="{{infor.instagram}}"> <i class="fa fa-instagram"></i></a> {% endcomment %}
+
+                            {% comment %} <a href="{{infor.twitter}}"> <i class="fa fa-twitter"></i></a> {% endcomment %}
+                            {% comment %} <a href="{{infor.facebook}}"><i class="fa fa-facebook-f" style="background: #4974c5 "></i> {% endcomment %}
+                           </a>
+                            <a href="https://github.com/Namit2111"><i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a href="mailto:namitjain2111@gmail.com"> <button class="main-button2">Contact me <i class="uil uil-message"style="" ></i>  </button></a>
+                            <a class="main-button ml-2" href="{{infor.mycv}}" target="_blank" rel="noopener noreferrer"> <button id="btn2">My Resume <i class="uil uil-import"></i></i>
+                            </button></a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 initial-1 aos-init" data-aos="zoom-in" data-aos-delay="300">
+                        {% comment %} <img src="{{infor.avatar}}" alt=""> {% endcomment %}
+                        <img src="{% static 'images/64.svg' %}" alt="">
+                    </div>
+                    {% comment %} {% endfor %} {% endcomment %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about its-me " id="about">
+        <div class="container2">
+
+            <div class="small-container2 ">
+                <div class="row2 initial-3">
+                    {% comment %} {% for aboutme in about %} {% endcomment %}
+                    <div class="col-md-6 aos-init" data-aos="fade-up-right" data-aos-delay="700">
+                        <img src="{% static 'images/96.svg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 initial-4">
+                        <div class="title aos-init" data-aos="zoom-in" data-aos-delay="200">
+                            <h1>About Me</h1>
+                        </div>
+                        <p data-aos="zoom-in" data-aos-delay="200" class="aos-init">i am currently pursuing Btech-CSE from Chandigarh group of colleges, Landran expecting to gradute in 2025</p>
+                        <p data-aos="zoom-in" data-aos-delay="200" class="aos-init">I like to give idea a life and make them possible so that everyone and see and emjoy and get help with it.</p>
+                        <div class="icons aos-init" data-aos="zoom-in" data-aos-delay="300">
+                            <div>
+                                <ion-icon name="logo-python" style="color: #38a4ec;font-size:35px"></ion-icon>
+                                <p>Python</p>
+                            </div>
+                            
+                            <div> <i class="fa fa-html5"></i>
+                                <p>Html5</p>
+                            </div>
+
+                            <div> <i class="fa fa-css3 " aria-hidden=”true”></i>
+                                <p>Css</p>
+                            </div>
+                            <div>
+                                <ion-icon name="logo-javascript" style="color: yellow;font-size:35px"></ion-icon>
+                                <p>Javascript</p>
+                            </div>
+                            <div>
+                                <ion-icon name="logo-react" style="color: cyan;font-size:35px"></ion-icon>
+                                </i>
+                                <p>Reactjs</p>
+                            </div>
+                            
+
+                            <div> <i class="fa fa-database"></i>
+                                <p>sql-database</p>
+                            </div>
+
+                        </div>
+
+                        {% comment %} {% endfor %} {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <article>
+            <div class="container skills" id="skills">
+
+                <div class="small-container">
+                    <div class="row9">
+                        <div class="col-md-10 initial-5">
+                            <div class="title">
+                                <h1 class="">SKILLS</h1>
+                            </div>
+                            <div class="all-bars">
+                                
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="bar-info">
+                                        <p>python</p>
+                                        <h5>85%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="four"></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="600">
+                                    <div class="bar-info">
+                                        <p>Django</p>
+                                        <h5>80%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="seven"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="700">
+                                    <div class="bar-info">
+                                        <p>sql-database/mongodb</p>
+                                        <h5>80%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="five"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="800">
+                                    <div class="bar-info">
+                                        <p>Frondend</p>
+                                        <h5>70%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="one"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="bar-info">
+                                        <p>Backend</p>
+                                        <h5>70%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="two"></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="bar-info">
+                                        <p>Javascript/NodeJs</p>
+                                        <h5>65%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="three"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="500">
+                                    <div class="bar-info">
+                                        <p>React</p>
+                                        <h5>40%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="six"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+
+
+    <div class="work">
+        <div class="container" id="work">
+            <div class="title2">
+                <h1>MY WORK</h1>
+            </div>
+            <div class="small-container">
+                <div class="row3">
+                    {% comment %} {% for sys in skills %} {% endcomment %}
+                    <div class="card initial-6  w- aos-init" data-aos="zoom-in" data-aos-delay="500">
+
+                        <img src="{{sys.image}}" alt="">
+
+
+                        <div class="card-body col-5-info px-3 py-3">
+                            <h3 class="pb-1">{{sys.title}}</h3>
+                            <p class="pb-1">{{sys.skill}}</p>
+                            <button><a href="{{sys.link}}">VISIT</a></button>
+
+                        </div>
+
+                    </div>
+                    {% comment %} {% endfor %} {% endcomment %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="contact">
+        <div class="container">
+            <div class="title5">
+                <h1>CONTACT ME</h1>
+            </div>
+            <div class="small-container">
+                <div class="row4">
+                                         {% comment %} {% for infor in info %} {% endcomment %}
+   
+                    <div class="col-md-6 initial-8 aos-init" data-aos="fade-down-right" data-aos-delay="300">
+                        <p id="helo">Wanna talk about a project or just saying hi <img src="{%  static 'images/e.png' %}" alt="" id="e" class="wave"></p>
+
+                        <div class="contact-info">
+                            <div class="c-ico">
+                    <i class="fa fa-comments"></i> <span id="io">Say Hello</span></i>
+
+                            </div>
+                            <p>Email: <span>namitjain2111@gmail.com</span></p>
+                            <p>Phone: <span>+91 9548232723</span></p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="c-ico">
+                                <i class="fa fa-map-marker"></i><span id="io">Find me in</span>
+                            </div>
+                            <p><span>Madhavpuram, Meerut </span></p>
+
+                        </div>
+                        <div class="contact-info obojo">
+                            <div class="c-ico">
+                                <i class="fa fa-share-square-o"> <span id="io">Social networks</span> </i>
+                            </div>
+                            <h4>
+                                {% comment %} <a href="{{infor.instagram}}" class="m1"> <i class="icofont-instagram"></i></a>
+
+                                  <a href="{{infor.twitter}}" class="m1"> <i class="icofont-twitter"></i></a> {% endcomment %}
+                                <a href="https://github.com/Namit2111"><i class="fa fa-github"></i>
+                                </a>
+                                {% comment %} <a href="{{infor.facebook}}"><i class="fa fa-facebook" style="background: #4974c5"></i></a> {% endcomment %}
+                            </h4>
+
+                        </div>
+                    </div>
+                    <div class=" col-md-6 initial-7 aos-init " data-aos="zoom-in " data-aos-delay="700 ">
+                        <img src="{% static 'images/19.svg' %} " alt=" ">
+                    </div>
+                 {% comment %} {% endfor %} {% endcomment %}
+                </div>
+                <div class="footing ">
+                    <div class="row justify-content-center ">
+                        <div class="col-md-4 ">
+                            <p>Designed By </p>
+                            <p>Namit Jain</p>
+                            <p>A Software Engineer</p>
+                            <p id="copy ">© COPYRIGHTS FOLIO. ALL RIGHTS RESERVED.
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="up-arrow ">
+            <div class="arrow ">
+                <a href="# "><i class="fa fa-angle-up "></i>
+            </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="preloader"></div>
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
