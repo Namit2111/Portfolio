@@ -1,3 +1,4 @@
 django
 Django
 sqlite-devel
+db-sqlite3
