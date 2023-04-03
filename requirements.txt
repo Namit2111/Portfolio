@@ -2,3 +2,4 @@ django
 Django
 sqlite-devel
 db-sqlite3
+libsqlite3-dev
